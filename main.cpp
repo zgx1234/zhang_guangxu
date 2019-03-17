@@ -32,6 +32,16 @@ int main()
     if(smallest>e)
     smallest=e;
     cout <<"smallest is"<<smallest<<endl;
+    largest =b;
+    if (largest<a)
+    largest =a;
+    if (largest<c)
+    largest =c;
+    if (largest<d)
+    largest =d;
+    if (largest<e)
+    largest =e;
+    cout <<"largest is"<<largest<<endl;
     return 0;
 
 
