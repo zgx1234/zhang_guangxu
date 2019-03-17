@@ -4,11 +4,19 @@ using namespace std;
 
 int main()
 {
-   cout <<"1 2 3 4";
-   cout <<"1"<<"2"<<"3"<<"4";
-   cout <<"1";
-   cout <<"2";
-   cout <<"3";
-   cout <<"4";
-   return 0;
+    int x=0;
+    int y=0;
+    cout <<"Enter two integers";
+    cout <<"The first integer x= ";
+    cin >>x;
+    cout <<"The second integer y= ";
+    cin >>y;
+    if (x>y)
+    cout <<x<<"is large";
+    if (x<y)
+    cout <<y<<"is large";
+    if (x==y)
+    cout <<"These numbers are equal";
+
+    return 0;
 }
