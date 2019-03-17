@@ -6,17 +6,36 @@ int main()
 {
     int x=0;
     int y=0;
-    cout <<"Enter two integers";
-    cout <<"The first integer x= ";
+    int z=0;
+    int Sum=0;
+    int Average=0;
+    int Product=0;
+    int Largest=0;
+    int Smallest=0;
+    cout <<"Enter three integers";
+    cout <<"x=";
     cin >>x;
-    cout <<"The second integer y= ";
+    cout <<"y=";
     cin >>y;
-    if (x>y)
-    cout <<x<<"is large";
+    cout <<"z=";
+    cin >>z;
+    Sum =x+y+z;
+    cout <<"Sum is "<<Sum<<endl;
+    Average =(x+y+z)/3;
+    cout <<"Average is "<<Average <<endl;
+    Product =x*y*z;
+    cout <<"Product is "<<Product<<endl;
     if (x<y)
-    cout <<y<<"is large";
-    if (x==y)
-    cout <<"These numbers are equal";
-
+    Largest =y;
+    if (Largest<z)
+    Largest =z;
+    cout<<"Largest is"<<Largest <<endl;
+    Smallest =x;
+    if (Smallest<y)
+    Smallest =y;
+    if (Smallest <z)
+    Smallest =z;
+    cout <<"Smallest is"<<Smallest<<endl;
     return 0;
+
 }
