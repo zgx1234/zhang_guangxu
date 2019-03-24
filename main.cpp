@@ -1,18 +1,17 @@
-#include"account.h"
+#include "Desktop\3.14(3).h"
+#include<stdio.h>
 int main()
 {
-  int n=0,m=0,l=0;
-  cout<<"请输入你的余额 ";
-  cin>>n;
-  cout<<"存款 ";
-  cin>>m;
-  cout<<"取款 ";
-  cin>>l;
-  if(l<=n)
-    l=l;
-    else
-    l=0&&cout<<"Debit amount exceeded account balance.";
-  Account account(n,m,l);
-  account.displaymessage();
+int n=0,s=0;
+cout<<"请输入月薪 ";
+cin>>n;
+Emloyee emloyee("剩","狗",n);
+emloyee.displaymessage1() ;
+cout<<"\n按4查询提升10%的年薪";
+cin>>s;
+if(s=4);
+emloyee.displaymessage2();
+
     return 0;
 }
+
