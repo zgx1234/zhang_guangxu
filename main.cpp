@@ -1,17 +1,52 @@
-#include "Desktop\3.14(3).h"
-#include<stdio.h>
-int main()
+#include <iostream>
+
+using namespace std;
+
+class Date
 {
-int n=0,s=0;
-cout<<"请输入月薪 ";
-cin>>n;
-Emloyee emloyee("剩","狗",n);
-emloyee.displaymessage1() ;
-cout<<"\n按4查询提升10%的年薪";
-cin>>s;
-if(s=4);
-emloyee.displaymessage2();
+public:
+    Date(int l,int m,int n)
+    {
+        setmonth(l);
+        setday(m);
+        setyear(n);
+    }
+    int setmonth(int j)
+    {
+        month=j;
+    }
+    int getmonth()
+    {
+        return month;
+    }
 
-    return 0;
-}
+    int setday(int k)
+    {
+        day=k;
+    }
+    int getday()
+    {
 
+        return day;
+    }
+    int setyear(int p)
+    {
+        year=p;
+    }
+    int getyear()
+    {
+
+        return year;
+    }
+
+    void displayDate()
+    {
+        cout<<"The Date is "<<getmonth()<<"/"<<getday()<<"/"<<getyear();
+    }
+private:
+    int month;
+    int day;
+    int year;
+
+
+};
